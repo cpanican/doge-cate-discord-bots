@@ -30,7 +30,10 @@ async def on_message(message):
         await asyncio.sleep(5)
         await client.send_message(message.channel, 'Done sleeping')
 
-    if message.content.startswith('!wtff'):
-        await client.send_message(message.channel, 'fuk u')
+    if message.content.startswith('pls'):
+        await client.send_message(message.channel, 'fuk u dank memer')
+
+    # else:
+    #     await client.send_message(message.channel, clever.query(message.content))
 
 client.run(config.dolexa)
